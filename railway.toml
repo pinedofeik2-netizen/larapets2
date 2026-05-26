@@ -1,7 +1,3 @@
-[build]
-# Railway usará el Dockerfile multi-stage
-dockerfilePath = "Dockerfile"
-
 [deploy]
 
 healthcheckPath = "/"
