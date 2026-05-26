@@ -1,0 +1,13 @@
+[providers]
+  node = "node"
+  php = "php"
+
+[phases.setup]
+  nixPkgs = ["nodejs", "php82", "php82-composer"]
+
+[phases.build]
+  cmds = [
+    "npm ci",
+    "npm run build",
+    "composer install --optimize-autoloader --no-dev"
+  ]
